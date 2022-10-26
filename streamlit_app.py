@@ -8,7 +8,7 @@ st.set_page_config(layout="centered", page_icon="🎓", page_title="Certificate 
 st.title("🎓Certificate PDF Generator")
 
 st.write(
-    "This app shows you how you can use Streamlit to make a PDF generator app in just a few lines of code!"
+    "Here you can use Streamlit to make a PDF generator app in just a few lines of code!"
 )
 
 left, right = st.columns(2)
