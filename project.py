@@ -44,11 +44,11 @@ if submit:
     pdf = pdfkit.from_string(html, False)
     st.balloons()
 
-    right.success("🎉Your Certificate was generated!")
+    right.success("🎉 Your Certificate was generated! 🎉")
     # st.write(html, unsafe_allow_html=True)
     # st.write("")
     right.download_button(
-        "⬇️Download PDF⬇️",
+        "⬇️ Download PDF ⬇️",
         data=pdf,
         file_name="Course-Certificate.pdf",
         mime="application/octet-stream",
