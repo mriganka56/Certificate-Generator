@@ -26,11 +26,11 @@ form = left.form("template_form")
 student = form.text_input("Student name")
 course = form.selectbox(
     "Choose course",
-    ["Advanced Core JAVA", "Advanced Python", "MERN Stack Development", "MEAN Stack Development", "DevOps Engineering"
+    ["Advanced Core JAVA", "Advanced Python", "MERN Stack Development", "MEAN Stack Development", "DevOps Engineering",
     "Data Science", "Blockchain Development"],
     index=0,
 )
-grade = form.slider("Grade", 1, 100, 70)
+grade = form.slider("Grade", 1, 100, 75)
 submit = form.form_submit_button("Generate PDF")
 
 if submit:
@@ -48,7 +48,7 @@ if submit:
     # st.write(html, unsafe_allow_html=True)
     # st.write("")
     right.download_button(
-        "⬇️Download PDF",
+        "⬇️Download PDF⬇️",
         data=pdf,
         file_name="Course-Certificate.pdf",
         mime="application/octet-stream",
